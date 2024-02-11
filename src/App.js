@@ -11,7 +11,7 @@ const App = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [clicked, setClicked] = useState(0);
-  const [homeFlag, setHomeFlag] = useState(true);
+  const [homeFlag, setHomeFlag] = useState(false);
   const onClickLogin = (event) => {
     event.preventDefault();
     console.warn(email);
