@@ -11,7 +11,7 @@ const App = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [clicked, setClicked] = useState(0);
-  const [homeFlag, setHomeFlag] = useState(false);
+  const [homeFlag, setHomeFlag] = useState(true);
   const onClickLogin = (event) => {
     event.preventDefault();
     console.warn(email);
@@ -85,7 +85,7 @@ const App = () => {
     <div className="bodya">
      
          
-         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} interval={3000} >
+         {/* <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} interval={3000} >
               
                 <div>
                   <img src={process.env.PUBLIC_URL + '/2.jpg'} alt="Image" />
@@ -124,20 +124,20 @@ const App = () => {
                     <p className="legend">💕💕💕💕</p>
                 </div>
                 
-            </Carousel>
-            <img src={process.env.PUBLIC_URL + '/19.jpg'} alt="Image" style={{width : "480px"}} />
+            </Carousel> */}
+            {/* <img src={process.env.PUBLIC_URL + '/19.jpg'} alt="Image" style={{width : "480px"}} /> */}
             <div style={{textAlign:'center',color:'red'}}>
-            <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} />
+            {/* <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} /> */}
             </div>
-            <div>
-            <br/> <br/>
+            {/* <div> */}
+            {/* <br/> <br/>
               <div className="center">पाने की जिद नहीं ख़ौने का डर है</div>
               <div className="center">दूर मत जाना कभी मुझसे बाकी
                आपका उसका फैसला मंजूर है </div>
                <br/> <br/>
-            </div>
+            </div> */}
             
-            <img src={process.env.PUBLIC_URL + '/13.jpg'} alt="Image" style={{width : "480px"}} />
+            {/* <img src={process.env.PUBLIC_URL + '/13.jpg'} alt="Image" style={{width : "480px"}} />
             <div>
             <br/> <br/>
               <div className="center">My relation with you is not like rain,</div>
@@ -161,12 +161,12 @@ const App = () => {
             <img src={process.env.PUBLIC_URL + '/2.jpg'} alt="Image" style={{width : "480px"}} />
             <img src={process.env.PUBLIC_URL + '/12.jpg'} alt="Image" style={{width : "480px"}} />
             <img src={process.env.PUBLIC_URL + '/11.jpg'} alt="Image" style={{width : "480px"}} />
-            <img src={process.env.PUBLIC_URL + '/5.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/5.jpg'} alt="Image" style={{width : "480px"}} /> */}
             <div style={{textAlign:'center',color:'red'}}>
               <h1> I Love You ❤️ </h1>
             </div>
             <div style={{textAlign:'center',color:'red'}}>
-            <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} />
+            {/* <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} /> */}
             </div>
             <div style={{textAlign:'center',color:'red'}}>
               <h1> I Love You ❤️ </h1>
@@ -223,6 +223,62 @@ const App = () => {
             </div> <div style={{textAlign:'center',color:'red'}}>
               <h1> I Love You ❤️ </h1>
             </div>
+            <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div>
+
             <div style={{textAlign:'center',color:'red'}}>
               <h1>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</h1>
             </div>
