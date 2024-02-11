@@ -352,3 +352,8 @@ img {
    transform: rotateY(180deg);
    background: rgb(218, 138, 138);
  }
+
+ .center{
+  text-align: center;
+  font-size: 2rem;
+ }

