@@ -18,7 +18,7 @@ const App = () => {
     toast.dismiss();
     console.warn(password);
 
-    if (email.trim().length === 0 || !email.toLocaleLowerCase().includes('komal') ) {
+    if (email.trim().length === 0) {
       toast.error('Invalid username');
       return;
     }
@@ -52,7 +52,7 @@ const App = () => {
           setHomeFlag(true)
          }else if(clicked == 0) {
           setClicked(1)
-          toast.error('Invalid password')
+          toast.error('Please try again')
          }
         
           
